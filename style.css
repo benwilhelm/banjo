@@ -1,0 +1,15 @@
+.string {
+  margin: .5em 0;
+}
+
+.fret.open {
+  opacity: .1;
+}
+
+input.fret[name='fret-4'][value='1'],
+input.fret[name='fret-4'][value='2'],
+input.fret[name='fret-4'][value='3'],
+input.fret[name='fret-4'][value='4'],
+input.fret[name='fret-4'][value='5'] {
+  visibility: hidden;
+}

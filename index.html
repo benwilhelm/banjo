@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>Banjo</title>
+</head>
+<body>
+
+  <div class="container">
+    <p>
+      <button class="btn btn-primary" id="initialize">Initialize Synth</button>
+    </p>
+    <div class="banjo">
+      <div class="string string-4">
+        <input type="radio" name="fret-4" checked value="0" class="fret open" data-string="4">
+        <input type="radio" name="fret-4" value="1" class="fret" data-string="4">
+        <input type="radio" name="fret-4" value="2" class="fret" data-string="4">
+        <input type="radio" name="fret-4" value="3" class="fret" data-string="4">
+        <input type="radio" name="fret-4" value="4" class="fret" data-string="4">
+        <input type="radio" name="fret-4" value="5" class="fret" data-string="4">
+        <input type="radio" name="fret-4" value="6" class="fret" data-string="4">
+        <input type="radio" name="fret-4" value="7" class="fret" data-string="4">
+        <input type="radio" name="fret-4" value="8" class="fret" data-string="4">
+        <input type="radio" name="fret-4" value="9" class="fret" data-string="4">
+        <input type="radio" name="fret-4" value="10" class="fret" data-string="4">
+        <input type="range" class="strength" min="0" max="100" step="1" data-string="4" name="strength-4" />
+        <button type="button" class="btn btn-primary pick" data-string="4" name="pick-4">Pick</button>
+      </div>
+      <div class="string string-3">
+        <input type="radio" name="fret-3" checked value="0" class="fret open" data-string="3">
+        <input type="radio" name="fret-3" value="1" class="fret" data-string="3">
+        <input type="radio" name="fret-3" value="2" class="fret" data-string="3">
+        <input type="radio" name="fret-3" value="3" class="fret" data-string="3">
+        <input type="radio" name="fret-3" value="4" class="fret" data-string="3">
+        <input type="radio" name="fret-3" value="5" class="fret" data-string="3">
+        <input type="radio" name="fret-3" value="6" class="fret" data-string="3">
+        <input type="radio" name="fret-3" value="7" class="fret" data-string="3">
+        <input type="radio" name="fret-3" value="8" class="fret" data-string="3">
+        <input type="radio" name="fret-3" value="9" class="fret" data-string="3">
+        <input type="radio" name="fret-3" value="10" class="fret" data-string="3">
+        <input type="range" class="strength" min="0" max="100" step="1" data-string="3" name="strength-3" />
+        <button type="button" class="btn btn-primary pick" data-string="3" name="pick-3">Pick</button>
+      </div>
+      <div class="string string-2">
+        <input type="radio" name="fret-2" checked value="0" class="fret open" data-string="2">
+        <input type="radio" name="fret-2" value="1" class="fret" data-string="2">
+        <input type="radio" name="fret-2" value="2" class="fret" data-string="2">
+        <input type="radio" name="fret-2" value="3" class="fret" data-string="2">
+        <input type="radio" name="fret-2" value="4" class="fret" data-string="2">
+        <input type="radio" name="fret-2" value="5" class="fret" data-string="2">
+        <input type="radio" name="fret-2" value="6" class="fret" data-string="2">
+        <input type="radio" name="fret-2" value="7" class="fret" data-string="2">
+        <input type="radio" name="fret-2" value="8" class="fret" data-string="2">
+        <input type="radio" name="fret-2" value="9" class="fret" data-string="2">
+        <input type="radio" name="fret-2" value="10" class="fret" data-string="2">
+        <input type="range" class="strength" min="0" max="100" step="1" data-string="2" name="strength-2" />
+        <button type="button" class="btn btn-primary pick" data-string="2" name="pick-2">Pick</button>
+      </div>
+      <div class="string string-1">
+        <input type="radio" name="fret-1" checked value="0" class="fret open" data-string="1">
+        <input type="radio" name="fret-1" value="1" class="fret" data-string="1">
+        <input type="radio" name="fret-1" value="2" class="fret" data-string="1">
+        <input type="radio" name="fret-1" value="3" class="fret" data-string="1">
+        <input type="radio" name="fret-1" value="4" class="fret" data-string="1">
+        <input type="radio" name="fret-1" value="5" class="fret" data-string="1">
+        <input type="radio" name="fret-1" value="6" class="fret" data-string="1">
+        <input type="radio" name="fret-1" value="7" class="fret" data-string="1">
+        <input type="radio" name="fret-1" value="8" class="fret" data-string="1">
+        <input type="radio" name="fret-1" value="9" class="fret" data-string="1">
+        <input type="radio" name="fret-1" value="10" class="fret" data-string="1">
+        <input type="range" class="strength" min="0" max="100" step="1" data-string="1" name="strength-1" />
+        <button type="button" class="btn btn-primary pick" data-string="1" name="pick-1">Pick</button>
+      </div>
+      <div class="string string-0">
+        <input type="radio" name="fret-0" checked value="0" class="fret open" data-string="0">
+        <input type="radio" name="fret-0" value="1" class="fret" data-string="0">
+        <input type="radio" name="fret-0" value="2" class="fret" data-string="0">
+        <input type="radio" name="fret-0" value="3" class="fret" data-string="0">
+        <input type="radio" name="fret-0" value="4" class="fret" data-string="0">
+        <input type="radio" name="fret-0" value="5" class="fret" data-string="0">
+        <input type="radio" name="fret-0" value="6" class="fret" data-string="0">
+        <input type="radio" name="fret-0" value="7" class="fret" data-string="0">
+        <input type="radio" name="fret-0" value="8" class="fret" data-string="0">
+        <input type="radio" name="fret-0" value="9" class="fret" data-string="0">
+        <input type="radio" name="fret-0" value="10" class="fret" data-string="0">
+        <input type="range" class="strength" min="0" max="100" step="1" data-string="0" name="strength-0" />
+        <button type="button" class="btn btn-primary pick" data-string="0" name="pick-0">Pick</button>
+      </div>
+      <div class="rolls my-3">
+          <button class="btn btn-primary" id="roll">Roll</button>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="rolls" id="roll1" value="box" checked>
+            <label class="form-check-label" for="roll1">Box</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="rolls" id="roll2" value="forward">
+            <label class="form-check-label" for="roll2">Forward</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="rolls" id="roll3" value="reverse">
+            <label class="form-check-label" for="roll3">Reverse</label>
+          </div>
+      </div>
+      <div class="chords my-3">
+        <span>Chords</span>
+
+        <button class="btn btn-primary" id="chordG">G</button>
+        <button class="btn btn-primary" id="chordC">C</button>
+        <button class="btn btn-primary" id="chordD7">D7</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.2/Tone.js"
+    integrity="sha512-mC+4OB44BnfNO5Tgllht1G+rdH82tMFKIM9pPNoQSMFqYm8PnPCffmmqTt68XpkAiJrmsQJwvFWDl8Br1o6vUw=="
+    crossorigin="anonymous">
+  </script>
+  <script src="./banjo.js" charset="utf-8"></script>
+  <script src="./ui.js" charset="utf-8"></script>
+</body>
+</html>
